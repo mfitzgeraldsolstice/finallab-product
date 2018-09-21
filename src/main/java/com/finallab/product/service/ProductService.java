@@ -26,8 +26,8 @@ public class ProductService {
         return savedProduct;
     }
 
-    public Optional<Product> get(Long id){
-        Optional<Product> result = productRepository.findById(id);
+    public Product getProductById(Long id){
+        Product result = productRepository.getProductById(id);
         return result;
     }
 
